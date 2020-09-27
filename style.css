@@ -1,0 +1,703 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*HEADER NAVBAR */
+
+header nav {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+#nav {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.5rem;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-bar .nav-item {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: rgb(134, 133, 133);
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar .nav-item:hover {
+    font-weight: bold;
+    color: black;
+    border-top: 2px solid blue;
+}
+
+.nav-bar .nav-item:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.nav-logo {
+    font-size: 1.3rem;
+}
+
+.nav-logo a {
+    border: 2px solid black;
+    padding: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons svg {
+    color: blue;
+}
+
+.nav-icons svg:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.nav-icons div {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 3rem;
+    border: 1px solid rgb(224, 224, 224);
+    margin-left: 2rem;
+}
+
+.nav-icons div svg:nth-child(2) {
+    width: 6px;
+    margin-left: 4px;
+}
+
+
+/*HEADER NAVBAR  FIM*/
+
+
+/* HEADER MAIN */
+
+header main div a:nth-child(2) {
+    margin-left: 1rem;
+    background-color: white;
+    color: blue;
+}
+
+header main {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+header main h1 {
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    font-size: 100px;
+    text-shadow: 5px 4px 0px #A3A3A3;
+}
+
+header main p {
+    margin-top: 1.5rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header main div {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header main div a {
+    font-weight: bold;
+    background-color: blue;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 3.5rem;
+    width: 9rem;
+    color: white;
+}
+
+
+/* HEADER MAIN  FIM*/
+
+
+/* SECTION PROCESS FIM*/
+
+#process {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#process div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.process-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-container .process-container-square {
+    height: 6rem;
+    width: 6rem;
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+.process-container #black-square {
+    background-color: black;
+}
+
+.process-container .process-container-square .process-circle {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.process-container .process-container-square .process-circle svg {
+    color: steelblue;
+}
+
+.process-container .process-container-square .process-circle #black-icon {
+    color: black;
+}
+
+.process-container p {
+    margin-top: 2rem;
+}
+
+.process-container small {
+    color: rgb(126, 126, 126);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* SECTION PROCESS  FIM*/
+
+
+/* SECTION WORKS*/
+
+#works {
+    background-color: rgb(219, 219, 219);
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#works div {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#works div span {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#works div h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#works div svg {
+    color: rgb(18, 169, 214);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.photos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.photos div {
+    width: 25vw;
+    flex: 1;
+    background-color: violet;
+}
+
+.photos #blue {
+    background-color: blue;
+}
+
+.photos #yellow {
+    background-color: yellow;
+}
+
+
+/* SECTION WORKS  FIM*/
+
+
+/* SECTION SERVICES */
+
+#services {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HUGE SERVICES */
+
+#services .huge-services {
+    height: 30vh;
+    flex: 1;
+}
+
+#services .services-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#services .huge-services-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid rgb(160, 44, 44);
+}
+
+#services .huge-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgb(248, 248, 248);
+}
+
+#services .huge-icon div:not(:first-child) {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: grey;
+}
+
+#services .huge-icon .gray-icon {
+    height: 100%;
+    width: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: indianred;
+}
+
+#services .huge-services .huge-photo-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#services .huge-services .huge-photo-container p {
+    height: 60%;
+    line-height: 2rem;
+    text-align: start;
+}
+
+#services .huge-services .huge-photo-container .huge-photo {
+    width: 100%;
+    height: 60%;
+    margin-right: 1rem;
+    background-color: rgb(144, 145, 144);
+}
+
+
+/* HUGE SERVICES FIM*/
+
+
+/* SKILL SERVICES*/
+
+#services .skill-bar {
+    flex: 1;
+    margin: 0 2rem;
+}
+
+#services .skill-bar .skill-services-container .skill {
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#services .skill-bar .skill-services-container .skill span {
+    padding-right: 1rem;
+}
+
+#services .skill-bar .skill-services-container .skill .skill-percentage {
+    display: flex;
+    height: 100%;
+    background-color: rgb(14, 106, 143);
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+#services .skill-bar .skill-services-container .skill .skill-percentage span {
+    margin-left: 1rem;
+}
+
+#services .skill-bar .skill-services-container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services .skill-bar .skill-services-container .skill #design {
+    width: 55%;
+}
+
+#services .skill-bar .skill-services-container .skill #application {
+    width: 80%;
+}
+
+#services .skill-bar .skill-services-container .skill #development {
+    width: 75%;
+}
+
+#services .skill-bar .skill-services-container .skill #html {
+    width: 36%;
+}
+
+
+/* SKILL SERVICES FIM*/
+
+
+/* PEOPLE */
+
+#services .people-say .people-say-container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(180, 179, 179);
+}
+
+#services .people-say .people-say-container .person {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    background-color: rgb(233, 233, 233);
+}
+
+#services .people-say .people-say-container .person .people-circle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: indigo;
+    margin-left: 1rem;
+}
+
+#services .people-say .people-say-container .person .people-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+#services .people-say .people-say-container .person .people-icons {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#services .people-say .people-icons .medium-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: lawngreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+#services .people-say .people-say-container p {
+    padding: 2rem;
+    line-height: 2rem;
+    color: rgb(56, 56, 56);
+}
+
+
+/* PEOPLE FIM */
+
+#services div {
+    height: 80%;
+}
+
+#services .services-container {
+    width: 100%;
+    display: flex;
+}
+
+#services .services-container:not(:first-child) {
+    margin-left: 2rem;
+}
+
+#services .services-container div {
+    width: 100%;
+}
+
+#services .people-say {
+    flex: 1;
+}
+
+
+/* SECTION SERVICES  FIM*/
+
+
+/* SECTION MOBILE  */
+
+#mobile {
+    height: 50vh;
+    width: 100vw;
+    background-color: lavender;
+}
+
+#mobile .mobile-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#mobile .mobile-container .optimized {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mobile .mobile-container .optimized h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#mobile .mobile-container .optimized p {
+    margin: 2rem 0;
+}
+
+#mobile .mobile-container .optimized ul {
+    margin-bottom: 2.5rem;
+}
+
+#mobile .mobile-container .optimized ul li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+#mobile .mobile-container .optimized ul li svg {
+    color: blueviolet;
+    margin-right: 0.5rem;
+}
+
+#mobile .mobile-container .optimized a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 4rem;
+    background-color: turquoise;
+}
+
+#mobile .mobile-container .celphone-photo {
+    background-color: ivory;
+    flex: 1;
+}
+
+
+/* SECTION MOBILE FIM */
+
+
+/* SECTION POSTS */
+
+#posts {
+    background-color: rgb(219, 219, 219);
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+#posts .container {
+    display: flex;
+}
+
+#posts .container .posts-container:not(:first-child) {
+    margin-left: 2rem;
+}
+
+#posts div {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#posts div span {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#posts div h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#posts div svg {
+    color: rgb(18, 169, 214);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#posts .posts-container {
+    width: 30%;
+    height: 100%;
+}
+
+#posts .posts-container .post-border {
+    margin-top: 0;
+    border: 2px solid black;
+}
+
+#posts .posts-container .post-border .post-comments {
+    margin-top: 0;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    width: 100%;
+}
+
+#posts .posts-container .post-border .post-comments .post-status {
+    margin-top: 0;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#posts .posts-container .post-image {
+    height: 13rem;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+}
+
+#posts .posts-container .post-image .post-image-date {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px;
+    background-color: blueviolet;
+    position: absolute;
+}
+
+#posts .posts-container .post-text {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+#posts .posts-container .post-text .admin {
+    margin: 0;
+}
+
+#posts .posts-container .post-text h4 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+#posts .posts-container .post-text div span:first-child {
+    margin-right: 2rem;
+}
+
+#posts .posts-container .post-text p {
+    text-align: start;
+    margin: 2rem 0;
+}
+
+
+/* SECTION POSTS FIM */
