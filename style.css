@@ -63,12 +63,27 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .nav-bar .nav-item:hover {
-    font-weight: bold;
     color: black;
-    border-top: 2px solid blue;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.nav-bar .nav-item::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: #31aae1;
+    display: none;
+    top: -4px;
+}
+
+.nav-bar .nav-item:hover::before {
+    display: block;
 }
 
 .nav-bar .nav-item:not(:first-child) {
@@ -146,6 +161,7 @@ header main p {
     font-size: 1.35rem;
     font-weight: bold;
     letter-spacing: 1px;
+    color: rgb(68, 68, 68);
 }
 
 header main div {
@@ -248,26 +264,27 @@ header main div a {
     align-items: center;
 }
 
-#works div {
+#works .latest {
     margin-top: 2rem;
     text-align: center;
 }
 
-#works div span {
+#works .latest span {
     font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
-#works div h2 {
+#works .latest h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.3rem;
 }
 
-#works div svg {
-    color: rgb(18, 169, 214);
+#works .latest svg {
+    color: #31aae1;
     width: 1.5rem;
     height: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .photos {
@@ -642,23 +659,23 @@ header main div a {
     width: 100%;
 }
 
-.latest {
+#posts .latest {
     margin: 2rem 0;
     text-align: center;
 }
 
-.latest span {
+#posts .latest span {
     font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
-.latest h2 {
+#posts .latest h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.3rem;
 }
 
-.latest svg {
+#posts .latest svg {
     color: #31aae1;
     width: 1.5rem;
     height: 1.5rem;
@@ -697,6 +714,13 @@ header main div a {
     margin: 0 1rem 0 2rem;
 }
 
+#posts .post-icons:hover {
+    color: white;
+    background-color: #31aae1;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
 #posts .post-icons {
     display: flex;
     align-items: center;
@@ -729,6 +753,48 @@ header main div a {
     background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80");
     position: relative;
+}
+
+.play-video {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(240, 240, 240);
+    color: #31aae1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: calc(60% - 4rem);
+    transform: translateY(-50%);
+}
+
+.arrows-image {
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    right: 10px;
+}
+
+.arrow-image-item {
+    width: 2rem;
+    height: 2rem;
+    background-color: #31aae1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.arrows-image .arrow-image-item:first-child {
+    margin-right: 5px;
+    color: rgb(209, 209, 209);
+    background-color: white;
+}
+
+.arrow-image-item svg {
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 #posts .post-image-date {
@@ -940,6 +1006,28 @@ header main div a {
 }
 
 #team .team-container .latest {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#team .team-container .latest span {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#team .team-container .latest h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#team .latest svg {
+    color: #31aae1;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#team .team-container .latest {
     margin: 2rem 0;
     text-align: center;
 }
@@ -1038,16 +1126,40 @@ header main div a {
     width: 100%;
 }
 
+#princing .latest {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#princing .latest span {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#princing .latest h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#princing .latest svg {
+    color: #31aae1;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 #princing .prices .price-item {
     width: 20rem;
     height: 450px;
     background-color: #fff;
+    border: 2px solid rgb(245, 245, 245);
 }
 
 #princing .prices .price-item .value {
     height: auto;
     background-color: #F9F9F9;
     position: relative;
+    border-bottom: 2px solid rgb(245, 245, 245);
 }
 
 #princing .prices .price-item .value-number {
@@ -1249,6 +1361,28 @@ header main div a {
     width: 100%;
 }
 
+#social .latest {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#social .latest span {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#social .latest h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#social .latest svg {
+    color: #31aae1;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .social-container .social-media-container {
     display: flex;
     align-items: center;
@@ -1271,6 +1405,12 @@ header main div a {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    transition: all 0.5s;
+}
+
+.social-media-container .media-item:hover {
+    background-color: red;
+    color: white;
 }
 
 .social-media-container .media-item svg {
@@ -1312,6 +1452,12 @@ header main div a {
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.logos-container .logo-item:hover {
+    opacity: 1;
 }
 
 #logos .circles {
@@ -1352,6 +1498,7 @@ header main div a {
 
 footer {
     background-color: #313131;
+    color: #8a8a8a;
 }
 
 footer .footer-initial {
@@ -1383,8 +1530,33 @@ footer .footer-initial {
     background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     border-radius: 50%;
-    border: 4px solid black;
+    border: 4px solid #515052;
     margin-right: 0.5rem;
+}
+
+.footer-post-text {
+    position: relative;
+}
+
+.footer-post-text::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #515052;
+    bottom: -10px;
+}
+
+#last-text::before {
+    display: none;
+}
+
+.footer-post-text :last-child::before {
+    display: none;
+}
+
+.footer-post-text span {
+    color: white;
 }
 
 .footer-post-text small {
@@ -1414,10 +1586,16 @@ footer .footer-initial {
 }
 
 .tag-item {
-    border: 1px solid black;
+    border: 1px solid #8a8a8a;
     padding: 0.4rem;
     border-radius: 1rem;
     font-size: 0.7rem;
+}
+
+.tag-item:hover {
+    background-color: #31aae1;
+    color: white;
+    border-color: #31aae1;
 }
 
 .footer-links {
@@ -1427,6 +1605,37 @@ footer .footer-initial {
     align-items: flex-start;
     height: 250px;
     margin-right: 3rem;
+}
+
+.footer-links .link-item {
+    position: relative;
+    transition: 0.5s all;
+}
+
+.link-item:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.link-item:hover svg {
+    color: #31aae1;
+}
+
+.footer-links .link-item:not(:first-child) {
+    margin-bottom: 1rem;
+}
+
+.footer-links .link-item::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #515052;
+    bottom: -12px;
+}
+
+.footer-links .link-item span {
+    margin-left: 1rem;
 }
 
 .footer-about {
@@ -1450,6 +1659,7 @@ footer .footer-initial {
     border-radius: 50%;
     bottom: -5.7rem;
     left: -1rem;
+    color: white;
 }
 
 .about-media {
@@ -1465,8 +1675,15 @@ footer .footer-initial {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 1px solid #8a8a8a;
     border-radius: 50%;
+    color: #8a8a8a;
+}
+
+.about-media-item:hover {
+    background-color: #31aae1;
+    color: white;
+    border-color: #31aae1;
 }
 
 .about-media-item:not(:first-child) {
@@ -1479,6 +1696,7 @@ footer .footer-initial {
     height: 3rem;
     display: flex;
     align-items: center;
+    color: #b3b2b2;
 }
 
 .footer-final .container {
@@ -1489,6 +1707,15 @@ footer .footer-initial {
 
 .footer-final .container span {
     font-size: 0.9rem;
+}
+
+.left {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.left span:hover {
+    color: #31aae1;
 }
 
 .left span:not(:first-child) {
