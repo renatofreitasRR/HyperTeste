@@ -1174,14 +1174,16 @@ header main div a {
 .numbers-container .numbers-header a {
     text-decoration: none;
     border: 2px solid black;
-    font-size: 0.5rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.8rem;
     color: black;
     font-weight: bold;
 }
 
 .numbers-container .numbers-items {
     height: calc(350px - 6rem);
+    background-position: center;
+    background-size: cover;
     background-image: url("https://img.freepik.com/fotos-gratis/textura-escura-da-ardosia-do-preto-cinzento-com-alta-resolucao-fundo-da-parede-de-pedra-preta-natural_38607-306.jpg?size=626&ext=jpg&ga=GA1.2.2032458507.1601251200");
     width: 100%;
     display: flex;
@@ -1220,6 +1222,7 @@ header main div a {
 .numbers-items .number-item-icon small {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
+    color: #777777;
 }
 
 .numbers-items .number-item-icon strong {
@@ -1288,7 +1291,6 @@ header main div a {
 
 #logos {
     height: 500px;
-    background-color: seashell;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1299,7 +1301,6 @@ header main div a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #31aae1;
     height: 150px;
     padding: 0 1.5rem;
 }
@@ -1307,7 +1308,10 @@ header main div a {
 .logos-container .logo-item {
     width: 6rem;
     height: 5rem;
-    background-color: snow;
+    background-image: url("./img/logo.png");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
 
 #logos .circles {
@@ -1322,7 +1326,7 @@ header main div a {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: turquoise;
+    background-color: #31aae1;
 }
 
 #logos .circles .circle-item:not(:first-child) {
@@ -1334,7 +1338,7 @@ header main div a {
     width: 60%;
     height: 350px;
     background-image: url("./img/tablets.png");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 2rem;
